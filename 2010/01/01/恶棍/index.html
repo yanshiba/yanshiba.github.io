@@ -11,7 +11,7 @@
    }).then((cs)=>{
   for(var i=0,cstr='';i<cs.length;i++) {
     cstr += '<li><a href="'+cs[i].url+'">'+cs[i].nick+'</a>：';
-    cstr += cs[i].commentText.length>20?cs[i].commentText.substr(0,28)+"...":cs[i].commentText;
+    cstr += cs[i].commentText.length>20?cs[i].commentText.substr(0,25)+"...":cs[i].commentText;
     cstr += '</li>';
   }
   if(cstr.length>0) {
